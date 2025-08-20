@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aranha Verso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Aranha Verse</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Fundo da página (parallax) -->
+    <div class="fundo-parallax" id="fundoParticulas"></div>
+
+    <!-- Sessões -->
+    <section id="inicio" class="sessao inicio">
+        <h1>Animando festas infantis com os heróis que as crianças amam!</h1>
+        <button onclick="document.getElementById('videos').scrollIntoView({behavior: 'smooth'})">Veja nossos vídeos</button>
+    </section>
+
+    <section id="fotos" class="sessao fotos">
+        <h2>Fotos</h2>
+        <div class="galeria">
+            <img src="grupo.jpg" alt="Foto 1">
+            <img src="minu.jpg" alt="Foto 2">
+            <img src="miro.jpg" alt="Foto 3">
+        </div>
+    </section>
+
+   <section id="videos" class="sessao videos">
+    <h2>Vídeos</h2>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="test.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+
+        <video autoplay muted loop>
+            <source src="test2.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+    </div>
+</section>
+
+    </section>
+
+    <section id="contato" class="sessao contato">
+        <h2>Contato</h2>
+        <p>Chame o Aranha Verso para sua festa!</p>
+        <form>
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="E-mail">
+            <textarea placeholder="Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="redes-sociais">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+    </section>
+    <!-- WhatsApp fixo -->
+    <a href="https://wa.me/+557998317298" class="whatsapp" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+   <!-- Música de fundo invisível -->
+<audio autoplay loop style="display:none">
+  <source src="song.opus" type="audio/ogg; codecs=opus">
+</audio>
+</body>
+</html>
